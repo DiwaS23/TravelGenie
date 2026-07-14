@@ -32,7 +32,7 @@ def extract_text(content):
 
 
 llm = ChatGoogleGenerativeAI(
-    model="gemini-3.5-flash",
+    model="gemini-3.1-flash-lite",
     disable_streaming=True,
     google_api_key=os.getenv("GOOGLE_API_KEY"),
 )
