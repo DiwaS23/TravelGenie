@@ -275,7 +275,7 @@ def get_agent():
         get_packing_list,
     ]
     checkpointer = MemorySaver()
-    return create_react_agent(llm, tools, checkpointer=checkpointer, state_modifier=SYSTEM_PROMPT)
+    return create_react_agent(llm, tools, checkpointer=checkpointer, prompt=SYSTEM_PROMPT)
 
 
 agent_executor = get_agent()
