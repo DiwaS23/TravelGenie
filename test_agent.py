@@ -32,10 +32,9 @@ def extract_text(content):
 
 
 llm = ChatGoogleGenerativeAI(
-    model="gemini-flash-lite-latest",
+    model="gemini-3.5-flash",
     disable_streaming=True,
     google_api_key=os.getenv("GOOGLE_API_KEY"),
-    transport="rest",
 )
 
 tools = [get_weather, search_attractions, search_hotels, estimate_budget, get_packing_list]

@@ -262,10 +262,9 @@ if st.sidebar.button("🔄 Reset conversation"):
 @st.cache_resource
 def get_agent():
     llm = ChatGoogleGenerativeAI(
-        model="gemini-flash-lite-latest",
+        model="gemini-3.5-flash",
         disable_streaming=True,
         google_api_key=os.getenv("GOOGLE_API_KEY"),
-        transport="rest",
     )
     tools = [
         get_weather,
