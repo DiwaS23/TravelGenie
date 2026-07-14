@@ -1,0 +1,9 @@
+# Ignore the virtual environment folder (too large, machine-specific)
+venv/
+
+# Ignore secrets - never upload API keys to GitHub
+.env
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
